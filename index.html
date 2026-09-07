@@ -1,0 +1,1020 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <meta
+      name="description"
+      content="QA Toolbox — ferramentas, tecnologias, tendências e recursos relacionados à Qualidade de Software."
+    />
+
+    <title>QA Toolbox | Nícollas Gonçalves</title>
+
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+
+
+  <!-- =====================================================
+       MENU FLUTUANTE — QA TOOLBOX
+  ====================================================== -->
+
+  <div class="toolbox-float" data-position="bottom-right">
+
+    <button
+      class="toolbox-float-button"
+      id="toolbox-float-button"
+      type="button"
+      aria-label="Abrir menu do QA Toolbox"
+      aria-expanded="false"
+      aria-controls="toolbox-float-menu"
+      title="QA Toolbox — arraste para reposicionar"
+    >
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M14.7 6.3a4.2 4.2 0 0 0-5.5 5.5L4 17a2.12 2.12 0 1 0 3 3l5.2-5.2a4.2 4.2 0 0 0 5.5-5.5l-2.7 2.7-2.1-.6-.6-2.1 2.7-2.7Z" />
+        <path d="m15.5 4.5 4 4" />
+      </svg>
+    </button>
+
+    <div
+      class="toolbox-float-menu"
+      id="toolbox-float-menu"
+      hidden
+    >
+
+      <div class="toolbox-menu-head">
+        <div>
+          <strong>QA TOOLBOX</strong>
+          <span>Central de controle</span>
+        </div>
+      </div>
+
+      <div class="toolbox-status">
+        <div class="toolbox-status-item">
+          <span class="toolbox-status-dot"></span>
+          <span>SYSTEM ONLINE</span>
+        </div>
+
+        <div class="toolbox-status-item">
+          <span class="toolbox-status-dot"></span>
+          <span>NEWS LIVE</span>
+        </div>
+      </div>
+
+      <div class="toolbox-menu-divider"></div>
+
+      <a class="toolbox-menu-link" href="index.html">
+        <span class="toolbox-menu-icon">⌂</span>
+        <span>
+          <strong>QA Toolbox</strong>
+          <small>Página inicial</small>
+        </span>
+      </a>
+
+      <a class="toolbox-menu-link" href="sobre.html">
+        <span class="toolbox-menu-icon">◉</span>
+        <span>
+          <strong>Desenvolvedor</strong>
+          <small>Perfil, skills e currículos</small>
+        </span>
+      </a>
+
+      <div class="toolbox-menu-divider"></div>
+
+      <div class="toolbox-theme-section">
+        <div class="toolbox-theme-title">PERSONALIZAÇÃO</div>
+
+        <div class="theme-picker" aria-label="Personalização do tema">
+
+          <div class="theme-choice-group">
+            <div class="theme-menu-title">FUNDO</div>
+
+            <div class="theme-choice-grid theme-background-grid">
+              <button type="button" data-background-choice="black" aria-label="Fundo preto">
+                <span class="theme-option-dot bg-black"></span>
+                <span>Preto</span>
+              </button>
+
+              <button type="button" data-background-choice="gray" aria-label="Fundo cinza">
+                <span class="theme-option-dot bg-gray"></span>
+                <span>Cinza</span>
+              </button>
+
+              <button type="button" data-background-choice="white" aria-label="Fundo branco">
+                <span class="theme-option-dot bg-white"></span>
+                <span>Branco</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="theme-choice-group">
+            <div class="theme-menu-title">DESTAQUE</div>
+
+            <div class="theme-choice-grid theme-accent-grid">
+              <button type="button" data-accent-choice="blue" aria-label="Destaque azul">
+                <span class="theme-option-dot accent-blue"></span>
+                <span>Azul</span>
+              </button>
+
+              <button type="button" data-accent-choice="navy" aria-label="Destaque azul escuro">
+                <span class="theme-option-dot accent-navy"></span>
+                <span>Azul escuro</span>
+              </button>
+
+              <button type="button" data-accent-choice="wine" aria-label="Destaque vinho">
+                <span class="theme-option-dot accent-wine"></span>
+                <span>Vinho</span>
+              </button>
+
+              <button type="button" data-accent-choice="orange" aria-label="Destaque laranja">
+                <span class="theme-option-dot accent-orange"></span>
+                <span>Laranja</span>
+              </button>
+
+              <button type="button" data-accent-choice="yellow" aria-label="Destaque amarelo">
+                <span class="theme-option-dot accent-yellow"></span>
+                <span>Amarelo</span>
+              </button>
+
+              <button type="button" data-accent-choice="purple" aria-label="Destaque roxo">
+                <span class="theme-option-dot accent-purple"></span>
+                <span>Roxo</span>
+              </button>
+
+              <button type="button" data-accent-choice="lime" aria-label="Destaque verde-lima">
+                <span class="theme-option-dot accent-lime"></span>
+                <span>Verde-lima</span>
+              </button>
+
+              <button type="button" data-accent-choice="green" aria-label="Destaque verde escuro">
+                <span class="theme-option-dot accent-green"></span>
+                <span>Verde escuro</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="toolbox-menu-divider"></div>
+
+      <div class="toolbox-menu-footer">
+        <span>Arraste o botão para reposicioná-lo</span>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main class="main">
+
+
+      <!-- ===================================================
+           COLUNA ESQUERDA
+      ==================================================== -->
+
+      <div class="content-left">
+
+
+        <!-- =================================================
+             INTRO
+        ================================================== -->
+
+        <section class="intro">
+
+          <p class="eyebrow">
+            QUALITY ASSURANCE • AUTOMATION • TESTING
+          </p>
+
+
+          <h1>
+            QA<br />
+            <span>TOOLBOX.</span>
+          </h1>
+
+
+          <p class="intro-text">
+            Uma coleção das principais ferramentas, tecnologias
+            e plataformas que fazem parte do universo de
+            Qualidade de Software.
+          </p>
+
+        </section>
+
+
+
+        <!-- =================================================
+             QA MARKET RADAR
+        ================================================== -->
+
+        <section class="qa-market" id="qa-market">
+
+
+          <!-- =================================================
+               PESQUISA
+          ================================================== -->
+
+          <div class="market-research">
+
+            <strong>
+              Pesquisa de Mercado:
+            </strong>
+
+            As porcentagens abaixo refletem a demanda atual
+            estimada em vagas de Quality Assurance, com base
+            em relatórios da indústria e tendências observadas
+            no mercado.
+
+            <em>
+              Última revisão: Setembro de 2026.
+            </em>
+
+          </div>
+
+
+
+          <!-- =================================================
+               GRID
+          ================================================== -->
+
+          <div class="market-grid">
+
+
+            <!-- =================================================
+                 01 — LINGUAGENS
+            ================================================== -->
+
+            <article class="market-card">
+
+              <div class="market-card-header">
+
+                <span class="market-number">
+                  01
+                </span>
+
+                <h2>
+                  Linguagens &amp; Base
+                </h2>
+
+              </div>
+
+
+              <div class="market-card-content">
+
+
+                <div class="market-chart">
+
+                  <div
+                    class="donut-chart"
+                    style="
+                      --p1:45;
+                      --p2:35;
+                      --p3:20;
+
+                      --c1:#f7df1e;
+                      --c2:#3178c6;
+                      --c3:#ab3737;
+                    "
+                  >
+
+                    <div class="donut-center">
+
+                      <strong>
+                        100%
+                      </strong>
+
+                      <span>
+                        mercado
+                      </span>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+
+                <div class="market-tools">
+
+
+                  <a
+                    href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
+                    class="market-tool"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                      alt="JavaScript"
+                    />
+
+                    <div>
+                      <span>JavaScript</span>
+                      <strong>45%</strong>
+                    </div>
+
+                  </a>
+
+
+                  <a
+                    href="https://www.python.org/"
+                    class="market-tool"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                      alt="Python"
+                    />
+
+                    <div>
+                      <span>Python</span>
+                      <strong>35%</strong>
+                    </div>
+
+                  </a>
+
+
+                  <a
+                    href="https://www.oracle.com/br/java/"
+                    class="market-tool"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+
+                    <img
+                      src="https://devicon-website.vercel.app/api/java/original.svg"
+                      alt="Java"
+                    />
+
+                    <div>
+                      <span>Java</span>
+                      <strong>20%</strong>
+                    </div>
+
+                  </a>
+
+                </div>
+
+              </div>
+
+            </article>
+
+
+
+            <!-- =================================================
+                 02 — AUTOMAÇÃO WEB
+            ================================================== -->
+
+            <article class="market-card">
+
+              <div class="market-card-header">
+
+                <span class="market-number">
+                  02
+                </span>
+
+                <h2>
+                  Automação Web
+                </h2>
+
+              </div>
+
+
+              <div class="market-card-content">
+
+                <div class="market-chart">
+
+                  <div
+                    class="donut-chart"
+                    style="
+                      --p1:40;
+                      --p2:30;
+                      --p3:20;
+
+                      --c1:#b02a2a;
+                      --c2:#4fb38d;
+                      --c3:#2ead33;
+                    "
+                  >
+
+                    <div class="donut-center">
+                      <strong>100%</strong>
+                      <span>mercado</span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+
+                <div class="market-tools">
+
+
+                  <a
+                    href="https://www.selenium.dev/"
+                    class="market-tool"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/selenium/selenium-original.svg"
+                      alt="Selenium"
+                    />
+
+                    <div>
+                      <span>Selenium</span>
+                      <strong>40%</strong>
+                    </div>
+
+                  </a>
+
+
+                  <a
+                    href="https://www.cypress.io/"
+                    class="market-tool"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cypressio/cypressio-original.svg"
+                      alt="Cypress"
+                    />
+
+                    <div>
+                      <span>Cypress</span>
+                      <strong>30%</strong>
+                    </div>
+
+                  </a>
+
+
+                  <a
+                    href="https://playwright.dev/"
+                    class="market-tool"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/playwright/playwright-original.svg"
+                      alt="Playwright"
+                    />
+
+                    <div>
+                      <span>Playwright</span>
+                      <strong>20%</strong>
+                    </div>
+
+                  </a>
+
+                </div>
+
+              </div>
+
+            </article>
+
+
+
+            <!-- =================================================
+                 03 — API PERFORMANCE
+            ================================================== -->
+
+            <article class="market-card">
+
+              <div class="market-card-header">
+
+                <span class="market-number">
+                  03
+                </span>
+
+                <h2>
+                  API &amp; Performance
+                </h2>
+
+              </div>
+
+
+              <div class="market-card-content">
+
+                <div class="market-chart">
+
+                  <div
+                    class="donut-chart"
+                    style="
+                      --p1:60;
+                      --p2:25;
+                      --p3:15;
+
+                      --c1:#fd8053;
+                      --c2:#f52323;
+                      --c3:#7d5cff;
+                    "
+                  >
+
+                    <div class="donut-center">
+                      <strong>100%</strong>
+                      <span>mercado</span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+
+                <div class="market-tools">
+
+
+                  <a
+                    href="https://www.postman.com/"
+                    class="market-tool"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg"
+                      alt="Postman"
+                    />
+
+                    <div>
+                      <span>Postman</span>
+                      <strong>60%</strong>
+                    </div>
+
+                  </a>
+
+
+                  <a
+                    href="https://jmeter.apache.org/"
+                    class="market-tool"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apache/apache-original-wordmark.svg"
+                      alt="Apache JMeter"
+                    />
+
+                    <div>
+                      <span>JMeter</span>
+                      <strong>25%</strong>
+                    </div>
+
+                  </a>
+
+
+                  <a
+                    href="https://k6.io/"
+                    class="market-tool"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/k6/k6-original.svg"
+                      alt="k6"
+                    />
+
+                    <div>
+                      <span>k6</span>
+                      <strong>15%</strong>
+                    </div>
+
+                  </a>
+
+                </div>
+
+              </div>
+
+            </article>
+
+
+
+            <!-- =================================================
+                 04 — DEVOPS
+            ================================================== -->
+
+            <article class="market-card">
+
+              <div class="market-card-header">
+
+                <span class="market-number">
+                  04
+                </span>
+
+                <h2>
+                  DevOps &amp; CI/CD
+                </h2>
+
+              </div>
+
+
+              <div class="market-card-content">
+
+                <div class="market-chart">
+
+                  <div
+                    class="donut-chart"
+                    style="
+                      --p1:50;
+                      --p2:30;
+                      --p3:20;
+
+                      --c1:#f05032;
+                      --c2:#6bb8f4;
+                      --c3:#0077ff;
+                    "
+                  >
+
+                    <div class="donut-center">
+                      <strong>100%</strong>
+                      <span>mercado</span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+
+                <div class="market-tools">
+
+
+                  <a
+                    href="https://git-scm.com/"
+                    class="market-tool"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+                      alt="Git"
+                    />
+
+                    <div>
+                      <span>Git</span>
+                      <strong>50%</strong>
+                    </div>
+
+                  </a>
+
+
+                  <a
+                    href="https://www.docker.com/"
+                    class="market-tool"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"
+                      alt="Docker"
+                    />
+
+                    <div>
+                      <span>Docker</span>
+                      <strong>30%</strong>
+                    </div>
+
+                  </a>
+
+
+                  <a
+                    href="https://github.com/features/actions"
+                    class="market-tool"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg"
+                      alt="GitHub Actions"
+                    />
+
+                    <div>
+                      <span>GitHub Actions</span>
+                      <strong>20%</strong>
+                    </div>
+
+                  </a>
+
+                </div>
+
+              </div>
+
+            </article>
+
+
+
+            <!-- =================================================
+                 05 — MOBILE
+            ================================================== -->
+
+            <article class="market-card">
+
+              <div class="market-card-header">
+
+                <span class="market-number">
+                  05
+                </span>
+
+                <h2>
+                  Mobile Testing
+                </h2>
+
+              </div>
+
+
+              <div class="market-card-content">
+
+                <div class="market-chart">
+
+                  <div
+                    class="donut-chart"
+                    style="
+                      --p1:65;
+                      --p2:20;
+                      --p3:15;
+
+                      --c1:#8b63e8;
+                      --c2:#835757;
+                      --c3:#2dbd3e;
+                    "
+                  >
+
+                    <div class="donut-center">
+                      <strong>100%</strong>
+                      <span>mercado</span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+
+                <div class="market-tools">
+
+
+                  <a
+                    href="https://appium.io/"
+                    class="market-tool"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+
+                    <img
+                      src="https://devicons.io/devicons/icons/appium.svg"
+                      alt="Appium"
+                    />
+
+                    <div>
+                      <span>Appium</span>
+                      <strong>65%</strong>
+                    </div>
+
+                  </a>
+
+
+                  <a
+                    href="https://developer.android.com/"
+                    class="market-tool"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+
+                    <img
+                      src="https://developer.android.com/static/images/training/testing/espresso.png?hl=pt-br"
+                      alt="Espresso"
+                    />
+
+                    <div>
+                      <span>Espresso</span>
+                      <strong>20%</strong>
+                    </div>
+
+                  </a>
+
+
+                  <a
+                    href="https://developer.apple.com/ios/"
+                    class="market-tool"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+
+                    <img
+                      src="https://miro.medium.com/v2/resize:fit:250/1%2AqT3jJ9M-96QBseXLGOm0cw.png"
+                      alt="XCUITest"
+                    />
+
+                    <div>
+                      <span>XCUITest</span>
+                      <strong>15%</strong>
+                    </div>
+
+                  </a>
+
+                </div>
+
+              </div>
+
+            </article>
+
+
+
+            <!-- =================================================
+                 06 — BANCO DE DADOS
+            ================================================== -->
+
+            <article class="market-card">
+
+              <div class="market-card-header">
+
+                <span class="market-number">
+                  06
+                </span>
+
+                <h2>
+                  Banco de Dados
+                </h2>
+
+              </div>
+
+
+              <div class="market-card-content">
+
+                <div class="market-chart">
+
+                  <div
+                    class="donut-chart"
+                    style="
+                      --p1:50;
+                      --p2:30;
+                      --p3:20;
+
+                      --c1:#336791;
+                      --c2:#ff9100;
+                      --c3:#47a248;
+                    "
+                  >
+
+                    <div class="donut-center">
+                      <strong>100%</strong>
+                      <span>mercado</span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+
+                <div class="market-tools">
+
+
+                  <a
+                    href="https://www.postgresql.org/"
+                    class="market-tool"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
+                      alt="PostgreSQL"
+                    />
+
+                    <div>
+                      <span>PostgreSQL</span>
+                      <strong>50%</strong>
+                    </div>
+
+                  </a>
+
+
+                  <a
+                    href="https://www.mysql.com/"
+                    class="market-tool"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg"
+                      alt="MySQL"
+                    />
+
+                    <div>
+                      <span>MySQL</span>
+                      <strong>30%</strong>
+                    </div>
+
+                  </a>
+
+
+                  <a
+                    href="https://www.mongodb.com/"
+                    class="market-tool"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
+                      alt="MongoDB"
+                    />
+
+                    <div>
+                      <span>MongoDB</span>
+                      <strong>20%</strong>
+                    </div>
+
+                  </a>
+
+                </div>
+
+              </div>
+
+            </article>
+
+          </div>
+
+        </section>
+
+      </div>
+
+
+
+      <!-- ===================================================
+           COLUNA DIREITA — QA RADAR
+      ==================================================== -->
+
+            <aside class="content-right">
+
+        <section class="news-section tool-category" id="qa-radar">
+
+          <div class="category-header">
+
+            <span class="category-number">
+              07
+            </span>
+
+            <h2>
+              QA Radar
+            </h2>
+
+          </div>
+
+
+          <p class="news-subtitle">
+
+            Últimas notícias, artigos e tendências
+            sobre Quality Assurance.
+
+          </p>
+
+
+          <div
+            id="news-container"
+            class="news-grid"
+          >
+
+            <p class="loading-text">
+              Buscando novidades do mundo de QA...
+            </p>
+
+          </div>
+
+        </section>
+
+      </aside>
+
+    </main>
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+      <script src="javascript/toolbox.js"></script>
+      <script src="javascript/theme.js"></script>
+      <script src="javascript/script.js"></script>
+      <script src="javascript/news.js"></script>
+
+  </body>
+</html>

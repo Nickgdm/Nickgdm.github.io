@@ -1,0 +1,507 @@
+/* =====================================================
+   QA TOOLBOX — SISTEMA DE TEMAS
+===================================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* =====================================================
+   VARIÁVEIS PADRÃO
+===================================================== */
+
+:root {
+
+  --background: #07090d;
+  --surface: #0d1118;
+  --surface-hover: #121923;
+
+  --text: #f3f5f8;
+  --text-muted: #8d98a7;
+
+  --primary: #2563eb;
+  --primary-dark: #1d4ed8;
+  --primary-rgb: 37, 99, 235;
+
+  --border: rgba(255, 255, 255, 0.08);
+
+  --header-bg: rgba(7, 9, 13, 0.88);
+
+  --card-bg: rgba(13, 17, 24, 0.84);
+
+  --glass: rgba(255, 255, 255, 0.025);
+
+  --chart-track: rgba(255, 255, 255, 0.06);
+
+  --shadow: rgba(0, 0, 0, 0.35);
+}
+
+
+/* =====================================================
+   FUNDOS
+===================================================== */
+
+/* PRETO */
+
+html[data-bg="black"] {
+
+  --background: #07090d;
+  --surface: #0d1118;
+  --surface-hover: #121923;
+
+  --text: #f3f5f8;
+  --text-muted: #8d98a7;
+
+  --border: rgba(255, 255, 255, 0.08);
+
+  --header-bg: rgba(7, 9, 13, 0.88);
+
+  --card-bg: rgba(13, 17, 24, 0.84);
+
+  --glass: rgba(255, 255, 255, 0.025);
+
+  --chart-track: rgba(255, 255, 255, 0.06);
+
+  --shadow: rgba(0, 0, 0, 0.35);
+}
+
+
+/* CINZA */
+
+html[data-bg="gray"] {
+
+  --background: #20242a;
+  --surface: #282d34;
+  --surface-hover: #30363e;
+
+  --text: #f2f4f7;
+  --text-muted: #aab2bd;
+
+  --border: rgba(255, 255, 255, 0.11);
+
+  --header-bg: rgba(32, 36, 42, 0.92);
+
+  --card-bg: rgba(40, 45, 52, 0.90);
+
+  --glass: rgba(255, 255, 255, 0.035);
+
+  --chart-track: rgba(255, 255, 255, 0.08);
+
+  --shadow: rgba(0, 0, 0, 0.28);
+}
+
+
+/* BRANCO */
+
+html[data-bg="white"] {
+
+  --background: #f4f5f7;
+  --surface: #ffffff;
+  --surface-hover: #eef0f3;
+
+  --text: #15181d;
+  --text-muted: #626b78;
+
+  --border: rgba(20, 25, 32, 0.12);
+
+  --header-bg: rgba(255, 255, 255, 0.92);
+
+  --card-bg: rgba(255, 255, 255, 0.94);
+
+  --glass: rgba(20, 25, 32, 0.025);
+
+  --chart-track: rgba(20, 25, 32, 0.08);
+
+  --shadow: rgba(16, 24, 40, 0.12);
+}
+
+
+/* =====================================================
+   CORES DE DESTAQUE
+===================================================== */
+
+/* AZUL */
+
+html[data-accent="blue"] {
+
+  --primary: #4da3ff;
+  --primary-dark: #2588f5;
+  --primary-rgb: 77, 163, 255;
+}
+
+
+/* AZUL ESCURO */
+
+html[data-accent="navy"] {
+
+  --primary: #2563eb;
+  --primary-dark: #1d4ed8;
+  --primary-rgb: 37, 99, 235;
+}
+
+
+/* VINHO */
+
+html[data-accent="wine"] {
+
+  --primary: #b4234d;
+  --primary-dark: #8f1839;
+  --primary-rgb: 180, 35, 77;
+}
+
+
+/* LARANJA */
+
+html[data-accent="orange"] {
+
+  --primary: #f97316;
+  --primary-dark: #ea580c;
+  --primary-rgb: 249, 115, 22;
+}
+
+
+/* ROXO */
+
+html[data-accent="purple"] {
+
+  --primary: #a855f7;
+  --primary-dark: #9333ea;
+  --primary-rgb: 168, 85, 247;
+}
+
+
+/* VERDE-LIMA */
+
+html[data-accent="lime"] {
+
+  --primary: #a3e635;
+  --primary-dark: #84cc16;
+  --primary-rgb: 163, 230, 53;
+}
+
+
+/* VERDE ESCURO */
+
+html[data-accent="green"] {
+
+  --primary: #16a34a;
+  --primary-dark: #15803d;
+  --primary-rgb: 22, 163, 74;
+}
+
+
+/* AMARELO */
+
+html[data-accent="yellow"] {
+
+  --primary: #eab308;
+  --primary-dark: #ca8a04;
+  --primary-rgb: 234, 179, 8;
+}
+
+
+/* =====================================================
+   BODY
+===================================================== */
+
+body {
+
+  background:
+
+    radial-gradient(
+      circle at 10% 20%,
+      rgba(var(--primary-rgb), 0.09),
+      transparent 30%
+    ),
+
+    radial-gradient(
+      circle at 90% 80%,
+      rgba(var(--primary-rgb), 0.06),
+      transparent 25%
+    ),
+
+    var(--background);
+
+  color: var(--text);
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+
+/* =====================================================
+   TRANSIÇÕES
+===================================================== */
+
+header,
+.card,
+.market-card,
+.content-right,
+.readme-content,
+.profile-skills-panel,
+.resume-section,
+.theme-menu {
+
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+/* =====================================================
+   SELETOR DE TEMA
+===================================================== */
+
+.theme-picker {
+
+  position: relative;
+
+  z-index: 100;
+}
+
+
+.theme-toggle {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  padding: 7px 9px;
+
+  border: 1px solid transparent;
+
+  border-radius: 7px;
+
+  background: transparent;
+
+  color: var(--text-muted);
+
+  cursor: pointer;
+
+  font-size: 0.68rem;
+
+  transition: 0.2s ease;
+}
+
+
+.theme-toggle:hover,
+.theme-toggle[aria-expanded="true"] {
+
+  color: var(--text);
+
+  border-color: var(--border);
+
+  background: var(--glass);
+}
+
+
+.theme-dot {
+
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: var(--primary);
+
+  box-shadow:
+    0 0 10px
+    rgba(var(--primary-rgb), 0.6);
+}
+
+
+/* =====================================================
+   MENU
+===================================================== */
+
+.theme-menu {
+
+  position: absolute;
+
+  top: calc(100% + 9px);
+
+  right: 0;
+
+  width: 190px;
+
+  max-height: 430px;
+
+  overflow-y: auto;
+
+  padding: 7px;
+
+  border: 1px solid var(--border);
+
+  border-radius: 10px;
+
+  background: var(--card-bg);
+
+  box-shadow:
+    0 18px 40px var(--shadow);
+
+  backdrop-filter: blur(14px);
+
+  z-index: 200;
+}
+
+
+.theme-menu[hidden] {
+
+  display: none;
+}
+
+
+.theme-menu-title {
+
+  padding: 7px 9px 5px;
+
+  color: var(--text-muted);
+
+  font-size: 0.47rem;
+
+  letter-spacing: 1.5px;
+
+  font-weight: 800;
+}
+
+
+.theme-menu button {
+
+  width: 100%;
+
+  padding: 8px 9px;
+
+  border: 0;
+
+  border-radius: 7px;
+
+  background: transparent;
+
+  color: var(--text-muted);
+
+  text-align: left;
+
+  cursor: pointer;
+
+  font-size: 0.63rem;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  transition: 0.2s ease;
+}
+
+
+.theme-menu button:hover,
+.theme-menu button.active {
+
+  background:
+    rgba(var(--primary-rgb), 0.10);
+
+  color: var(--text);
+}
+
+
+.theme-divider {
+
+  height: 1px;
+
+  background: var(--border);
+
+  margin: 6px 3px;
+}
+
+
+/* =====================================================
+   BOLINHAS
+===================================================== */
+
+.theme-option-dot {
+
+  width: 9px;
+  height: 9px;
+
+  border-radius: 50%;
+
+  flex-shrink: 0;
+
+  border: 1px solid var(--border);
+}
+
+
+/* =====================================================
+   FUNDOS
+===================================================== */
+
+.bg-black {
+  background: #07090d;
+}
+
+.bg-gray {
+  background: #555b65;
+}
+
+.bg-white {
+  background: #f4f5f7;
+}
+
+
+/* =====================================================
+   CORES
+===================================================== */
+
+.accent-blue {
+  background: #4da3ff;
+}
+
+.accent-navy {
+  background: #2563eb;
+}
+
+.accent-wine {
+  background: #b4234d;
+}
+
+.accent-orange {
+  background: #f97316;
+}
+
+.accent-purple {
+  background: #a855f7;
+}
+
+.accent-lime {
+  background: #a3e635;
+}
+
+.accent-green {
+  background: #16a34a;
+}
+
+.accent-yellow {
+  background: #eab308;
+}
+
+
+/* =====================================================
+   RESPONSIVO
+===================================================== */
+
+@media (max-width: 600px) {
+
+  .theme-menu {
+
+    right: -8px;
+
+    width: 180px;
+  }
+}

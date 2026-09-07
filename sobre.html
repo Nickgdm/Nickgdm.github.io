@@ -1,0 +1,828 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <meta
+    name="description"
+    content="Nícollas Gonçalves — QA Engineer e QA Automation."
+  />
+
+  <title>
+    Desenvolvedor | Nícollas Gonçalves
+  </title>
+
+
+  <!-- =================================================
+       CSS GLOBAL
+  ================================================== -->
+
+  <link
+    rel="stylesheet"
+    href="css/style.css"
+  />
+
+  <link
+    rel="stylesheet"
+    href="css/theme.css"
+  />
+
+  <link
+    rel="stylesheet"
+    href="css/sobre.css"
+  />
+
+</head>
+
+
+<body>
+
+
+
+  <!-- =====================================================
+       MENU FLUTUANTE — QA TOOLBOX
+  ====================================================== -->
+
+  <div class="toolbox-float" data-position="bottom-right">
+
+    <button
+      class="toolbox-float-button"
+      id="toolbox-float-button"
+      type="button"
+      aria-label="Abrir menu do QA Toolbox"
+      aria-expanded="false"
+      aria-controls="toolbox-float-menu"
+      title="QA Toolbox — arraste para reposicionar"
+    >
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M14.7 6.3a4.2 4.2 0 0 0-5.5 5.5L4 17a2.12 2.12 0 1 0 3 3l5.2-5.2a4.2 4.2 0 0 0 5.5-5.5l-2.7 2.7-2.1-.6-.6-2.1 2.7-2.7Z" />
+        <path d="m15.5 4.5 4 4" />
+      </svg>
+    </button>
+
+    <div
+      class="toolbox-float-menu"
+      id="toolbox-float-menu"
+      hidden
+    >
+
+      <div class="toolbox-menu-head">
+        <div>
+          <strong>QA TOOLBOX</strong>
+          <span>Central de controle</span>
+        </div>
+      </div>
+
+      <div class="toolbox-status">
+        <div class="toolbox-status-item">
+          <span class="toolbox-status-dot"></span>
+          <span>SYSTEM ONLINE</span>
+        </div>
+
+        <div class="toolbox-status-item">
+          <span class="toolbox-status-dot"></span>
+          <span>NEWS LIVE</span>
+        </div>
+      </div>
+
+      <div class="toolbox-menu-divider"></div>
+
+      <a class="toolbox-menu-link" href="index.html">
+        <span class="toolbox-menu-icon">⌂</span>
+        <span>
+          <strong>QA Toolbox</strong>
+          <small>Página inicial</small>
+        </span>
+      </a>
+
+      <a class="toolbox-menu-link" href="sobre.html">
+        <span class="toolbox-menu-icon">◉</span>
+        <span>
+          <strong>Desenvolvedor</strong>
+          <small>Perfil, skills e currículos</small>
+        </span>
+      </a>
+
+      <div class="toolbox-menu-divider"></div>
+
+      <div class="toolbox-theme-section">
+        <div class="toolbox-theme-title">PERSONALIZAÇÃO</div>
+
+        <div class="theme-picker" aria-label="Personalização do tema">
+
+          <div class="theme-choice-group">
+            <div class="theme-menu-title">FUNDO</div>
+
+            <div class="theme-choice-grid theme-background-grid">
+              <button type="button" data-background-choice="black" aria-label="Fundo preto">
+                <span class="theme-option-dot bg-black"></span>
+                <span>Preto</span>
+              </button>
+
+              <button type="button" data-background-choice="gray" aria-label="Fundo cinza">
+                <span class="theme-option-dot bg-gray"></span>
+                <span>Cinza</span>
+              </button>
+
+              <button type="button" data-background-choice="white" aria-label="Fundo branco">
+                <span class="theme-option-dot bg-white"></span>
+                <span>Branco</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="theme-choice-group">
+            <div class="theme-menu-title">DESTAQUE</div>
+
+            <div class="theme-choice-grid theme-accent-grid">
+              <button type="button" data-accent-choice="blue" aria-label="Destaque azul">
+                <span class="theme-option-dot accent-blue"></span>
+                <span>Azul</span>
+              </button>
+
+              <button type="button" data-accent-choice="navy" aria-label="Destaque azul escuro">
+                <span class="theme-option-dot accent-navy"></span>
+                <span>Azul escuro</span>
+              </button>
+
+              <button type="button" data-accent-choice="wine" aria-label="Destaque vinho">
+                <span class="theme-option-dot accent-wine"></span>
+                <span>Vinho</span>
+              </button>
+
+              <button type="button" data-accent-choice="orange" aria-label="Destaque laranja">
+                <span class="theme-option-dot accent-orange"></span>
+                <span>Laranja</span>
+              </button>
+
+              <button type="button" data-accent-choice="yellow" aria-label="Destaque amarelo">
+                <span class="theme-option-dot accent-yellow"></span>
+                <span>Amarelo</span>
+              </button>
+
+              <button type="button" data-accent-choice="purple" aria-label="Destaque roxo">
+                <span class="theme-option-dot accent-purple"></span>
+                <span>Roxo</span>
+              </button>
+
+              <button type="button" data-accent-choice="lime" aria-label="Destaque verde-lima">
+                <span class="theme-option-dot accent-lime"></span>
+                <span>Verde-lima</span>
+              </button>
+
+              <button type="button" data-accent-choice="green" aria-label="Destaque verde escuro">
+                <span class="theme-option-dot accent-green"></span>
+                <span>Verde escuro</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="toolbox-menu-divider"></div>
+
+      <div class="toolbox-menu-footer">
+        <span>Arraste o botão para reposicioná-lo</span>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- =================================================
+       CONTEÚDO PRINCIPAL
+  ================================================== -->
+
+  <main class="developer-page">
+
+
+    <!-- =================================================
+         CABEÇALHO
+    ================================================== -->
+
+    <section class="developer-heading">
+
+      <div class="section-label">
+
+        <span>01</span>
+
+        <p>
+          DESENVOLVEDOR
+        </p>
+
+      </div>
+
+
+      <h1>
+        QA Engineer &
+        <span>Automation.</span>
+      </h1>
+
+
+      <p class="developer-intro">
+
+        Um pouco sobre minha trajetória, minhas habilidades,
+        projetos e experiências na área de Qualidade de Software.
+
+      </p>
+
+    </section>
+
+
+
+    <!-- =================================================
+         GRID PRINCIPAL
+    ================================================== -->
+
+    <div class="developer-grid">
+
+
+      <!-- =================================================
+           COLUNA ESQUERDA
+      ================================================== -->
+
+      <div class="developer-left">
+
+
+        <!-- ===============================================
+             PERFIL + SKILLS
+        ================================================ -->
+
+        <section class="profile-skills-section">
+
+
+          <div class="section-label">
+
+            <span>02</span>
+
+            <p>
+              PERFIL TÉCNICO
+            </p>
+
+          </div>
+
+
+
+          <div class="profile-card">
+
+
+            <!-- =========================================
+                 FOTO
+            ========================================== -->
+
+            <div class="developer-photo-area">
+
+
+              <div class="developer-photo-frame">
+
+                <img
+                  src="https://github.com/Nickgdm.png?size=600"
+                  alt="Foto de perfil de Nícollas Gonçalves no GitHub"
+                  loading="eager"
+                />
+
+              </div>
+
+
+              <div class="photo-caption">
+
+                <strong>
+                  Nickgdm
+                </strong>
+
+                <span>
+                  QA Engineer • Automation
+                </span>
+
+              </div>
+
+
+            </div>
+
+
+
+            <!-- =========================================
+                 RADAR
+            ========================================== -->
+
+            <div class="skills-area">
+
+
+              <div class="skills-heading">
+
+                <span>
+                  QA SKILLS
+                </span>
+
+                <small>
+                  Nível de domínio
+                </small>
+
+              </div>
+
+
+              <div class="radar-wrap">
+
+
+                <svg
+                  class="skill-radar"
+                  viewBox="0 0 420 420"
+                  role="img"
+                  aria-label="Gráfico de habilidades técnicas em QA"
+                >
+
+
+                  <!-- =================================
+                       GRADE EXTERNA
+                  ================================== -->
+
+                  <polygon
+                    points="210,55 357,162 301,335 119,335 63,162"
+                    class="radar-grid"
+                  />
+
+
+                  <!-- =================================
+                       GRADE 80
+                  ================================== -->
+
+                  <polygon
+                    points="210,90 327,175 282,310 138,310 93,175"
+                    class="radar-grid"
+                  />
+
+
+                  <!-- =================================
+                       GRADE 60
+                  ================================== -->
+
+                  <polygon
+                    points="210,125 297,188 264,285 156,285 123,188"
+                    class="radar-grid"
+                  />
+
+
+                  <!-- =================================
+                       GRADE 40
+                  ================================== -->
+
+                  <polygon
+                    points="210,160 268,201 247,260 173,260 152,201"
+                    class="radar-grid"
+                  />
+
+
+                  <!-- =================================
+                       EIXOS
+                  ================================== -->
+
+                  <line
+                    x1="210"
+                    y1="55"
+                    x2="210"
+                    y2="210"
+                    class="radar-axis"
+                  />
+
+
+                  <line
+                    x1="357"
+                    y1="162"
+                    x2="210"
+                    y2="210"
+                    class="radar-axis"
+                  />
+
+
+                  <line
+                    x1="301"
+                    y1="335"
+                    x2="210"
+                    y2="210"
+                    class="radar-axis"
+                  />
+
+
+                  <line
+                    x1="119"
+                    y1="335"
+                    x2="210"
+                    y2="210"
+                    class="radar-axis"
+                  />
+
+
+                  <line
+                    x1="63"
+                    y1="162"
+                    x2="210"
+                    y2="210"
+                    class="radar-axis"
+                  />
+
+
+
+                  <!-- =================================
+                       ÁREA DAS SKILLS
+                  ================================== -->
+
+                  <polygon
+                    points="
+                      210,78
+                      320,174
+                      292,302
+                      147,302
+                      106,176
+                    "
+                    class="radar-area"
+                  />
+
+
+
+                  <!-- =================================
+                       PONTOS
+                  ================================== -->
+
+                  <circle
+                    cx="210"
+                    cy="78"
+                    r="5"
+                    class="radar-point"
+                  />
+
+
+                  <circle
+                    cx="320"
+                    cy="174"
+                    r="5"
+                    class="radar-point"
+                  />
+
+
+                  <circle
+                    cx="292"
+                    cy="302"
+                    r="5"
+                    class="radar-point"
+                  />
+
+
+                  <circle
+                    cx="147"
+                    cy="302"
+                    r="5"
+                    class="radar-point"
+                  />
+
+
+                  <circle
+                    cx="106"
+                    cy="176"
+                    r="5"
+                    class="radar-point"
+                  />
+
+
+
+                  <!-- =================================
+                       LABELS
+                  ================================== -->
+
+                  <text
+                    x="210"
+                    y="32"
+                    text-anchor="middle"
+                    class="radar-label"
+                  >
+                    AUTOMAÇÃO
+                  </text>
+
+
+                  <text
+                    x="382"
+                    y="158"
+                    text-anchor="middle"
+                    class="radar-label"
+                  >
+                    API
+                  </text>
+
+
+                  <text
+                    x="325"
+                    y="365"
+                    text-anchor="middle"
+                    class="radar-label"
+                  >
+                    TESTES
+                  </text>
+
+
+                  <text
+                    x="95"
+                    y="365"
+                    text-anchor="middle"
+                    class="radar-label"
+                  >
+                    BDD
+                  </text>
+
+
+                  <text
+                    x="38"
+                    y="158"
+                    text-anchor="middle"
+                    class="radar-label"
+                  >
+                    CI/CD
+                  </text>
+
+
+                </svg>
+
+              </div>
+
+
+
+              <!-- =========================================
+                   LEGENDA
+              ========================================== -->
+
+              <div class="skill-legend">
+
+
+                <div>
+                  <strong>
+                    Automação
+                  </strong>
+
+                  <span>
+                    85
+                  </span>
+                </div>
+
+
+                <div>
+                  <strong>
+                    API
+                  </strong>
+
+                  <span>
+                    75
+                  </span>
+                </div>
+
+
+                <div>
+                  <strong>
+                    Testes
+                  </strong>
+
+                  <span>
+                    90
+                  </span>
+                </div>
+
+
+                <div>
+                  <strong>
+                    BDD
+                  </strong>
+
+                  <span>
+                    70
+                  </span>
+                </div>
+
+
+                <div>
+                  <strong>
+                    CI/CD
+                  </strong>
+
+                  <span>
+                    65
+                  </span>
+                </div>
+
+
+              </div>
+
+
+            </div>
+
+
+          </div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             CURRÍCULOS
+        ================================================== -->
+
+        <section class="resume-section">
+
+
+          <div class="section-label">
+
+            <span>03</span>
+
+            <p>
+              CURRÍCULOS
+            </p>
+
+          </div>
+
+
+
+          <div class="resume-card">
+
+
+            <div class="resume-heading">
+
+
+              <span class="resume-eyebrow">
+                DISPONÍVEL PARA RECRUTADORES
+              </span>
+
+
+              <h2>
+                Meus currículos.
+              </h2>
+
+
+              <p>
+                Consulte ou baixe meu currículo profissional
+                nas versões em português e inglês.
+              </p>
+
+
+            </div>
+
+
+
+            <div class="resume-buttons">
+
+
+              <a
+                href="curriculos/Curriculo_Nicollas_Goncalves_QA.pdf"
+                download
+                class="resume-button"
+              >
+
+                <div>
+
+                  <strong>
+                    🇧🇷 Currículo
+                  </strong>
+
+                  <span>
+                    Português • PDF
+                  </span>
+
+                </div>
+
+                <span class="download-icon">
+                  ↓
+                </span>
+
+              </a>
+
+
+
+              <a
+                href="curriculos/Resume_Nicollas_Goncalves_QA.pdf"
+                download
+                class="resume-button"
+              >
+
+                <div>
+
+                  <strong>
+                    🇺🇸 Resume
+                  </strong>
+
+                  <span>
+                    English • PDF
+                  </span>
+
+                </div>
+
+                <span class="download-icon">
+                  ↓
+                </span>
+
+              </a>
+
+
+            </div>
+
+
+          </div>
+
+
+        </section>
+
+
+      </div>
+
+
+
+      <!-- =================================================
+           COLUNA DIREITA — README
+      ================================================== -->
+
+      <section class="github-profile">
+
+
+        <div class="section-label">
+
+          <span>04</span>
+
+          <p>
+            GITHUB README
+          </p>
+
+        </div>
+
+
+        <article
+          id="github-readme"
+          class="readme-content"
+        >
+
+          <div class="loading">
+            Carregando perfil...
+          </div>
+
+        </article>
+
+
+      </section>
+
+
+    </div>
+
+
+  </main>
+
+
+
+  <!-- =================================================
+       FOOTER
+  ================================================== -->
+
+  <footer class="footer">
+
+    <span>
+      © Nícollas Gonçalves
+    </span>
+
+    <span>
+      QA • Automation • Quality
+    </span>
+
+  </footer>
+
+
+
+  <!-- =================================================
+       MARKED
+  ================================================== -->
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"
+  ></script>
+
+
+
+  <!-- =================================================
+       TEMA GLOBAL
+  ================================================== -->
+
+  <script src="javascript/toolbox.js"></script>
+  <script src="javascript/theme.js"></script>
+
+
+
+  <!-- =================================================
+       SOBRE
+  ================================================== -->
+
+  <script src="javascript/sobre.js"></script>
+
+
+</body>
+
+</html>
