@@ -10,14 +10,14 @@ A página funciona como uma ferramenta, onde centraliza informações sobre qual
 
 ## Funções da landing page
 
-QA Toolbox — página principal do portfólio.
-Mercado QA — informações e referências relacionadas ao mercado de Quality Assurance.
-QA Radar — notícias recentes relacionadas a QA e tecnologia.
-Desenvolvedor — trajetória, habilidades e projetos.
-Currículos — acesso às versões disponíveis do currículo.
-GitHub README — integração para apresentação do perfil técnico.
-Sistema de temas — diferentes combinações de fundo e cores.
-Menu flutuante — acesso rápido às principais áreas e configurações.
+- QA Toolbox — página principal do portfólio.
+- Mercado QA — informações e referências relacionadas ao mercado de Quality Assurance.
+- QA Radar — notícias recentes relacionadas a QA e tecnologia.
+- Desenvolvedor — trajetória, habilidades e projetos.
+- Currículos — acesso às versões disponíveis do currículo.
+- GitHub README — integração para apresentação do perfil técnico.
+- Sistema de temas — diferentes combinações de fundo e cores.
+- Menu flutuante — acesso rápido às principais áreas e configurações.
 
 ## Tecnologias e ferramentas
 
